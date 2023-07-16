@@ -10,11 +10,13 @@ const options = [
 ];
 
 const App = () => {
-  const [currentPlan, setCurrentPlan] = useState();
+  const [currentPlan, setCurrentPlan] = useState('Annual Plan');
 
   const changeHandler = (e) => {
-
+        setCurrentPlan(e.options.value);
   };
+
+
 
   return (
     <div id="main">
